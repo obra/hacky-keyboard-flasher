@@ -44,7 +44,7 @@
 
   },
   "scripts": {
-	      "rebuild": "npm rebuild serialport-v4 --update-binary",
+	      "rebuild": "npm rebuild serialport@6.0.0 --update-binary",
 
     "postinstall": "electron-builder install-app-deps",
     "preunit": "webpack --config=build/webpack.unit.config.js --env=test --display=none",
@@ -54,14 +54,14 @@
     "test": "npm run unit && npm run e2e",
     "start": "node build/start.js",
     "release": "webpack --config=build/webpack.app.config.js --env=production && electron-builder",
-    "dist": "node builder.js"
+    "dist": "build -mwl --x64 --ia32 -p always"
 
   },
   "dependencies": {
     "avrgirl-arduino": "^1.4.12",
     "fs-jetpack": "^1.0.0",
     "node-gyp": "^3.6.2",
-    "serialport-v4": "^4.0.7"
+    "serialport": "^6.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.5",
@@ -70,7 +70,7 @@
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "chai": "^4.1.0",
     "css-loader": "^0.28.7",
-    "electron": "1.6.9",
+    "electron": "1.7.0",
     "electron-builder": "^19.43.3",
     "electron-mocha": "^4.0.0",
     "friendly-errors-webpack-plugin": "^1.6.1",
