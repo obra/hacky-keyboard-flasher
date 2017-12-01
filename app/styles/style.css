@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'ScreenMatrix';
+  src: url('../fonts/ScreenMatrix.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'CourierNew';
+  src: url('../fonts/CourierNew.ttf') format('truetype');
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #FFEAED;
+  padding-left: 50px;
+}
+
+h1 {
+  font-family: sans-serif;
+  font-size: 50px;
+}
+
+#left {
+  display: relative;
+  float: left;
+  width: 400px;
+}
+
+#left p {
+  font-size: 18px;
+  padding-bottom: 20px;
+  line-height: 1.5em;
+  color: #8A076C;
+}
+
+#filename {
+  margin-top: 14px;
+  margin-bottom: 20px;
+  float: left;
+  position: relative;
+  color: #8A076C;
+}

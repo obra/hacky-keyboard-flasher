@@ -1,15 +1,15 @@
 {
-  "name": "electron-boilerplate",
-  "productName": "Electron Boilerplate",
-  "description": "Starter for your Electron application",
+  "name": "keyboardio-flasher",
+  "productName": "Keyboardio Firmware Flasher",
+  "description": "A recovery tool for Keyboardio keyboards",
   "version": "0.0.0",
   "private": true,
-  "author": "Mr. Gumby <mr.gumby@example.com>",
-  "copyright": "© 2017, Gumby inc.",
-  "homepage": "http://example.com",
-  "main": "app/background.js",
-  "build": {
-    "appId": "com.example.electron-boilerplate",
+  "author": "Jesse Vincent <jesse@keyboard.io>",
+  "copyright": "© 2017, Keyboard.io, Inc.",
+  "homepage": "https://keyboard.io",
+  "main": "app/app.js",
+  "build": { 
+    "appId": "io.keyboard.flasher",
     "files": [
       "app/**/*",
       "node_modules/**/*",
@@ -34,6 +34,8 @@
     "fs-jetpack": "^1.0.0"
   },
   "devDependencies": {
+    "avrgirl-arduino": "^1.4.12",
+    "serialport": "^6.0.4",
     "@babel/core": "^7.0.0-beta.5",
     "@babel/preset-env": "^7.0.0-beta.5",
     "babel-loader": "^8.0.0-beta.0",
